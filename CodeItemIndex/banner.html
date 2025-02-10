@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEON LABS</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* Đặt nền trắng */
+        }
+
+        /* Công ty thông tin */
+        .company-info {
+            margin-top: 50px;
+            padding: 30px 15px;
+            text-align: left;
+        }
+
+        .company-info .company-name {
+            font-family: "Langar", serif;
+            font-size: 48px;
+            color: #333;
+            display: block;
+        }
+
+        .company-info .highlight {
+            color: #175CD3;
+        }
+
+        .company-info .company-slogan {
+            font-size: 22px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .company-info .btn-request-quote {
+            background-color: #175CD3;
+            color: white;
+            font-size: 18px;
+            border-radius: 50px;
+            padding: 12px 30px;
+            transition: all 0.3s ease-in-out;
+            border: none;
+        }
+
+        .company-info .btn-request-quote:hover {
+            background-color: #003d99;
+        }
+
+        .company-info .company-content {
+            font-size: 18px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* Responsive chỉnh sửa */
+        @media (max-width: 768px) {
+            .company-info {
+                text-align: center;
+            }
+
+            .company-info .company-name {
+                font-size: 36px;
+            }
+
+            .company-info .company-slogan {
+                font-size: 15px;
+            }
+
+            .company-info .btn-request-quote {
+                font-size: 16px;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .company-info .company-content {
+                font-size: 16px;
+            }
+
+            .company-info div {
+                width: 100%;
+            }
+
+            .image-banner {
+                margin-top: 30px;
+            }
+
+            .image-banner img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px; /* Bo góc ảnh */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <div class="row align-items-center">
+            <!-- Thông tin công ty -->
+            <div class="col-lg-6 col-md-12">
+                <div class="company-info">
+                    <span class="company-name"><span class="highlight">Chúng tôi là</span></span>
+                    <span class="company-name">CODEON LABS</span>
+                    <p class="company-slogan">Công ty thiết kế web, lập trình web chuyên nghiệp</p>
+                    <button type="button" class="btn btn-request-quote">YÊU CẦU BÁO GIÁ</button>
+                    <br><br>
+                    <p class="company-content"><strong>
+                        MANG CÔNG NGHỆ HIỆN ĐẠI ĐẾN VỚI <br> 
+                        DOANH NGHIỆP CỦA BẠN</strong>
+                    </p>
+                    
+                </div>
+            </div>
+
+            <!-- Hình ảnh banner -->
+            <div class="col-lg-6 col-md-12 text-center image-banner">
+                <img src="img/banner.png" alt="Banner" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

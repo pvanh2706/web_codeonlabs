@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEON LABS</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+ .section-heading {
+    font-size: 30px;
+    color: #007BFF; /* Màu xanh */
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-description {
+    width: 85%;
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+    color: #444;
+}
+
+.feature-box {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Giúp các nút thẳng hàng */
+    height: 100%;
+}
+
+.feature-box img {
+    max-width: 80%; /* Giảm kích thước ảnh */
+    border-radius: 10px;
+}
+
+.feature-title {
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.feature-description {
+    font-size: 15px;
+    width: 80%;
+    text-align: center;
+    color: #555;
+    flex-grow: 1; /* Đẩy nút xuống cuối */
+}
+
+/* Nút Click Here */
+.feature-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: auto; /* Đẩy nút xuống dưới cùng */
+}
+
+.feature-button:hover {
+    background-color: #0056b3;
+}
+
+.feature-button i {
+    margin-left: 5px;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    .section-heading {
+        font-size: 24px;
+    }
+
+    .section-description {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .feature-title {
+        font-size: 18px;
+    }
+
+    .feature-description {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .feature-box img {
+        max-width: 70%; /* Giảm thêm kích thước ảnh trên mobile */
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12">
+                <p class="section-heading">CHÚNG TÔI XÂY DỰNG THƯƠNG HIỆU VÀ NỀN TẢNG GIÚP BẠN TIẾP CẬN KHÁCH HÀNG TỐT HƠN</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="section-description">
+                    Trong kinh doanh, quan trọng nhất là xây dựng được một thương hiệu mạnh và một chiến lược marketing hợp lý, giúp công ty của bạn bán được nhiều hàng và sinh lời mạnh mẽ.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <!-- Hộp tính năng -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="feature-box">
+                    <img src="img/cam-ket1.png" alt="Quảng cáo thương hiệu">
+                    <p class="feature-title">Quảng cáo thương hiệu</p>
+                    <p class="feature-description">
+                        Trong kinh doanh, quan trọng nhất là xây dựng được một thương hiệu mạnh và một chiến lược marketing hợp lý.
+                    </p>
+                    <button class="feature-button">
+                        Click Here <i class="fas fa-hand-pointer"></i>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="feature-box">
+                    <img src="img/cam-ket1.png" alt="Chiến lược Marketing">
+                    <p class="feature-title">Chiến lược Marketing</p>
+                    <p class="feature-description">
+                        Tạo chiến lược marketing hợp lý giúp bạn tiếp cận khách hàng hiệu quả và gia tăng doanh thu.
+                    </p>
+                    <button class="feature-button">
+                        Click Here <i class="fas fa-hand-pointer"></i>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="feature-box">
+                    <img src="img/cam-ket1.png" alt="Thiết kế website">
+                    <p class="feature-title">Thiết kế website</p>
+                    <p class="feature-description">
+                        Một website chuyên nghiệp giúp bạn nâng tầm thương hiệu và thu hút khách hàng dễ dàng hơn.
+                    </p>
+                    <button class="feature-button">
+                        Click Here <i class="fas fa-hand-pointer"></i>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="feature-box">
+                    <img src="img/cam-ket1.png" alt="Quản lý khách hàng">
+                    <p class="feature-title">Quản lý khách hàng</p>
+                    <p class="feature-description">
+                        Hệ thống CRM giúp bạn quản lý khách hàng, tối ưu quy trình bán hàng và nâng cao trải nghiệm.
+                    </p>
+                    <button class="feature-button">
+                        Click Here <i class="fas fa-hand-pointer"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
