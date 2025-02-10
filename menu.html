@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsive - Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* Navbar chung */
+        .navbar-custom {
+            background-color: white;
+            transition: all 0.4s ease-in-out;
+            padding: 10px 0;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navbar khi cuộn xuống */
+        .navbar-custom.scrolled {
+            padding: 5px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Logo */
+        .logo-company {
+            width: 100px;
+            object-fit: cover;
+        }
+
+        /* Menu items */
+        .navbar-nav .nav-link {
+            font-weight: bold;
+            color: #000;
+            transition: all 0.3s ease-in-out;
+            text-transform: uppercase;
+            padding: 10px 15px;
+        }
+
+        /* Active menu item */
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+        }
+
+        /* Nút gọi điện thoại */
+        .btn-company-phone {
+            background-color: red;
+            color: #000;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-company-phone:hover {
+            background-color: #bbdefb;
+            color: #000;
+        }
+
+        /* Hamburger menu */
+        .navbar-toggler {
+            border: none;
+            font-size: 24px;
+        }
+
+        .navbar-toggler:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        /* Responsive - hiển thị nút gọi điện thoại dưới menu khi thu nhỏ */
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                text-align: center;
+            }
+
+            .navbar-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-company-phone {
+                display: block;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-company.png" alt="Logo" class="logo-company">
+            </a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main menu -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dịch vụ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tại sao chọn CodeOn Labs?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <!-- Nút gọi điện -->
+            <div class="d-none d-lg-block">
+                <a href="tel:0979160564" class="btn btn-company-phone px-4 py-2">0979 160 564</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
