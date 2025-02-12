@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slicknav -->
+	<!-- <link rel="stylesheet" href="css/slicknav.min.css"> -->
+
+    <!-- Medipro CSS -->
+    <link rel="stylesheet" href="mystyle.css">
+
+    <!-- Import Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- menu.html -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-company.png" alt="Logo" class="logo-company">
+            </a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main menu -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page-service.html">Dịch vụ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page-why-choose-us.html">Tại sao chọn CodeOn Labs?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <!-- Nút gọi điện -->
+            <div class="d-none d-lg-block">
+                <a href="tel:0979160564" class="btn btn-company-phone px-4 py-2">0979 160 564</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+   <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const menuItems = document.querySelectorAll(".nav-link");
+
+    // Lấy pathname của URL hiện tại (chỉ lấy phần đường dẫn, không có domain)
+    const currentPath = window.location.pathname.split("/").pop(); 
+
+    menuItems.forEach(link => {
+        const linkPath = link.getAttribute("href").split("/").pop(); 
+
+        // Nếu đường dẫn trùng khớp thì thêm class active
+        if (linkPath === currentPath) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+});
+
+    </script>
+
+   
+    
+
+
+    <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+        <div class="container p-4">
+            <div class="row align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-6 hero-section">
+                    <h1 class="fw-bold">Hãy để</h1>
+                    <h2 class="fw-bold">CodeOn Labs</h2>
+                    <p class="mt-2 fs-5">
+                        giúp bạn tạo ra Website giá rẻ, phù hợp và tăng doanh thu cho doanh nghiệp của bạn.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center mb-3 mb-md-0">
+                    <img src="https://storage.googleapis.com/a1aa/image/wtlVYwOS651Wk8jgOHwL2dOiwElw66fe_DXDNyuOVe0.jpg" 
+                         alt="A person smiling and holding a geometric structure" 
+                         class="img-fluid image-section" width="300">
+                </div>
+            </div>
+            <div class="row align-items-center mt-4 flex-column flex-md-row">
+                <div class="col-md-6 text-center mb-3 mb-md-0">
+                    <img src="https://storage.googleapis.com/a1aa/image/GY0tMGRzYkPbks-8SBw5_qUsu2lTeMj6kQtP9TtRpCc.jpg" 
+                         alt="A person holding a magnifying glass" 
+                         class="img-fluid rounded" width="300">
+                </div>
+                <div class="col-md-6 hero-section">
+                    <h2 class="fw-bold">Quy trình thiết kế website</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <div class="row g-4">
+            <div class="col-md-4 d-flex flex-column justify-content-center align-items-center text-center bg-white p-4 rounded shadow-md" style="grid-row: span 2;">
+                <h1 class="fw-bold mb-4">CHI TIẾT QUY TRÌNH</h1>
+                <div class="process-step-first">
+                    <img src="https://storage.googleapis.com/a1aa/image/-CD7H1tQmz68phqGkN3OoYCcax_YYWlailBnqos81DM.jpg" alt="A colorful spring with a flower on top" class="mb-4" width="100" height="100">
+                    <h2 class="fw-bold">1. Gặp gỡ</h2>
+                    <p>CodeOn Labs chủ động gặp gỡ, trao đổi và hiểu rõ nhu cầu khách hàng để tạo ra một website khác biệt và độc đáo. Sau đó, chúng tôi sẽ lên kế hoạch chi tiết thực hiện và gửi báo giá cho khách hàng.</p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row g-4">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="process-step">
+                            <img src="https://storage.googleapis.com/a1aa/image/IO7RSwvdRcXpLcjZKYKMsTlj79EjjVZ6WHUuunWX2zU.jpg" alt="A wooden block puzzle" class="mb-4" width="100" height="100">
+                            <h2 class="fw-bold">2. Lập kế hoạch</h2>
+                            <p>CodeOn Labs sẽ tạo ra kế hoạch thiết kế web, đồng thời hỗ trợ khách hàng xây dựng chiến lược marketing hoàn hảo từ việc xác định mục tiêu, nắm được cơ hội, thách thức của thị trường.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="process-step">
+                            <img src="https://storage.googleapis.com/a1aa/image/_hUenVvPPaCpOE_362XwKzTtHoBAFm4WRFjs779aJb0.jpg" alt="A handheld gaming console" class="mb-4" width="100" height="100">
+                            <h2 class="fw-bold">3. Thiết kế và lập trình</h2>
+                            <p>Đội ngũ kỹ thuật chuyên nghiệp và giàu kinh nghiệm sẽ tư vấn và thiết kế phù hợp với tài chính và nhu cầu của khách hàng.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="process-step">
+                            <img src="https://storage.googleapis.com/a1aa/image/UXn5oPhIEHIrzTJ1E9ttkfzAzTPqzawPQeiSvB4sQO4.jpg" alt="A rocket" class="mb-4" width="100" height="100">
+                            <h2 class="fw-bold">4. Kiểm thử</h2>
+                            <p>Đội ngũ kỹ thuật chuyên nghiệp và giàu kinh nghiệm sẽ tư vấn và thiết kế phù hợp với tài chính và nhu cầu của khách hàng.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="process-step">
+                            <img src="https://storage.googleapis.com/a1aa/image/rhR4op-wl2prjE92NEv_J9PpKZE3Kan_GE5WT6Mdhzw.jpg" alt="A star with a smiley face" class="mb-4" width="100" height="100">
+                            <h2 class="fw-bold">5. Triển khai</h2>
+                            <p>Đội ngũ kỹ thuật chuyên nghiệp và giàu kinh nghiệm sẽ tư vấn và thiết kế phù hợp với tài chính và nhu cầu của khách hàng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container py-4">
+        <div class="text-center">
+            <h1 class="fw-bold">CODEON LABS</h1>
+            <h2 class="fw-bold mt-4">SỰ LỰA CHỌN ĐÚNG ĐẮN CHO MỌI DOANH NGHIỆP THÀNH CÔNG</h2>
+            <p class="fs-5 mt-2">Website không chỉ là một trang web đơn giản, mà còn là đại diện cho hình ảnh thương hiệu của bạn</p>
+        </div>
+
+        <div class="row align-items-center mt-5">
+            <div class="col-lg-6 text-center">
+                <img src="https://storage.googleapis.com/a1aa/image/WQi8IgQMKt76jJyRh56N_KtVIqgi3d0Kma1qQ6sK4Yc.jpg" alt="Design Materials" class="img-fluid img-hover" width="400" height="300">
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="d-flex align-items-center mb-4 box-wrapper">
+                    <div class="icon-box bg-warning text-white me-3">
+                        <img src="https://storage.googleapis.com/a1aa/image/zlJD5zGMpF-F8jtG26wByNb82kYKRsxjkJ8iEvqdxrk.jpg" alt="Icon" width="40">
+                    </div>
+                    <div>
+                        <h3 class="fw-bold">Giao diện đẹp, độc quyền và hiện đại</h3>
+                        <p>Tối ưu hóa trải nghiệm người dùng <br> Tăng khả năng tiếp cận khách hàng và tăng tương tác trên Website</p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mb-4 box-wrapper">
+                    <div class="icon-box bg-danger text-white me-3">
+                        <img src="https://storage.googleapis.com/a1aa/image/e9wmjGkeKwsbo9ZpkoP2k-GCRuVWxFmmulMMI7SwX28.jpg" alt="Icon" width="40">
+                    </div>
+                    <div>
+                        <h3 class="fw-bold">Nâng cao vị thế thương hiệu</h3>
+                        <p>Trợ thủ đắc lực giúp xây dựng thương hiệu thông qua hình ảnh giao diện <br> Góp phần tạo nên khách hàng trung thành tiềm năng</p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center box-wrapper">
+                    <div class="icon-box bg-primary text-white me-3">
+                        <img src="https://storage.googleapis.com/a1aa/image/XjtamF3wxRjHK7Qh-MHWPO2RUp4uxt1VzbRk542AF5g.jpg" alt="Icon" width="40">
+                    </div>
+                    <div>
+                        <h3 class="fw-bold">Gia tăng hiệu quả kinh doanh</h3>
+                        <p>Tăng tỷ lệ chuyển đổi và giúp gia tăng doanh số của Website <br> Thu hút khách hàng tiềm năng, giữ chân khách hàng cũ và khẳng định tên tuổi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <div class="text-center">
+            <h1 class="fw-bold">CODEON LABS</h1>
+            <h2 class="fw-bold mt-4">SỰ LỰA CHỌN ĐÚNG ĐẮN CHO MỌI DOANH NGHIỆP THÀNH CÔNG</h2>
+            <p class="fs-5 mt-2">Website không chỉ là một trang web đơn giản, mà còn là đại diện cho hình ảnh thương hiệu của bạn</p>
+        </div>
+
+        <div class="row align-items-center mt-5">
+           
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="d-flex align-items-center mb-4 box-wrapper">
+                    <div class="icon-box bg-warning text-white me-3">
+                        <img src="https://storage.googleapis.com/a1aa/image/zlJD5zGMpF-F8jtG26wByNb82kYKRsxjkJ8iEvqdxrk.jpg" alt="Icon" width="40">
+                    </div>
+                    <div>
+                        <h3 class="fw-bold">Giao diện đẹp, độc quyền và hiện đại</h3>
+                        <p>Tối ưu hóa trải nghiệm người dùng <br> Tăng khả năng tiếp cận khách hàng và tăng tương tác trên Website</p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mb-4 box-wrapper">
+                    <div class="icon-box bg-danger text-white me-3">
+                        <img src="https://storage.googleapis.com/a1aa/image/e9wmjGkeKwsbo9ZpkoP2k-GCRuVWxFmmulMMI7SwX28.jpg" alt="Icon" width="40">
+                    </div>
+                    <div>
+                        <h3 class="fw-bold">Nâng cao vị thế thương hiệu</h3>
+                        <p>Trợ thủ đắc lực giúp xây dựng thương hiệu thông qua hình ảnh giao diện <br> Góp phần tạo nên khách hàng trung thành tiềm năng</p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center box-wrapper">
+                    <div class="icon-box bg-primary text-white me-3">
+                        <img src="https://storage.googleapis.com/a1aa/image/XjtamF3wxRjHK7Qh-MHWPO2RUp4uxt1VzbRk542AF5g.jpg" alt="Icon" width="40">
+                    </div>
+                    <div>
+                        <h3 class="fw-bold">Gia tăng hiệu quả kinh doanh</h3>
+                        <p>Tăng tỷ lệ chuyển đổi và giúp gia tăng doanh số của Website <br> Thu hút khách hàng tiềm năng, giữ chân khách hàng cũ và khẳng định tên tuổi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <img src="https://storage.googleapis.com/a1aa/image/WQi8IgQMKt76jJyRh56N_KtVIqgi3d0Kma1qQ6sK4Yc.jpg" alt="Design Materials" class="img-fluid img-hover" width="400" height="300">
+            </div>
+        </div>
+    </div>
+ 
+    <footer class="bg-light py-4">
+        <div class="container text-center mb-3">
+            <!-- <img src="img/footer.png" class="img-fluid mx-auto d-block" alt="Ảnh căn giữa" style="max-width: 500px;"> -->
+        </div>
+
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Cột 1: Logo và giới thiệu -->
+                <div class="col-md-3 mb-4">
+                    <div class="d-flex align-items-center">
+                        <img src="img/logo-company.png" class="img-fluid me-3" alt="Logo" style="width: 100px;">
+                        <div>
+                            <h6 class="mb-0">CODE ON LABS</h6>
+                            <small>Coding of the future</small>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-muted">
+                        CodeOn Labs đồng hành cùng doanh nghiệp trong việc tạo ra những website giá trị, giúp khách hàng tăng trưởng doanh thu và tiếp cận với nhiều khách hàng hơn.
+                    </p>
+                </div>
+
+                <!-- Cột 2: Dịch vụ -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">DỊCH VỤ CỦA CHÚNG TÔI</h6>
+                    <ul class="list-unstyled footer-list">
+                        <li><span>&gt;&gt;</span> Thiết kế website</li>
+                        <li><span>&gt;&gt;</span> Chỉnh sửa website</li>
+                        <li><span>&gt;&gt;</span> Dịch vụ hosting</li>
+                        <li><span>&gt;&gt;</span> Dịch vụ SEO website</li>
+                        <li><span>&gt;&gt;</span> Đăng ký tên miền</li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Thiết kế website -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">THIẾT KẾ WEBSITE CHUYÊN NGHIỆP</h6>
+                    <ul class="list-unstyled footer-list">
+                        <li><span>&gt;&gt;</span> Thiết kế website theo yêu cầu</li>
+                        <li><span>&gt;&gt;</span> Thiết kế website bán hàng</li>
+                        <li><span>&gt;&gt;</span> Thiết kế web nhà thuốc</li>
+                        <li><span>&gt;&gt;</span> Thiết kế web doanh nghiệp</li>
+                    </ul>
+                </div>
+
+                <!-- Cột 4: Mạng xã hội và liên hệ -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">VỀ CHÚNG TÔI</h6>
+                    <div class="d-flex social-icons gap-3 justify-content-md-start">
+                        <a href="https://www.facebook.com" target="_blank" class="text-primary">
+                            <i class="bi bi-facebook fs-3"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="text-primary">
+                            <i class="bi bi-linkedin fs-3"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank" class="text-danger">
+                            <i class="bi bi-youtube fs-3"></i>
+                        </a>
+                    </div>
+                    <p class="mt-3"><i class="bi bi-telephone-fill text-primary"></i> 0906258096</p>
+                    <p><i class="bi bi-envelope-fill text-danger"></i> info@codeonlabs.vn</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jquery Min JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Slicknav JS -->
+	<!-- <script src="js/slicknav.min.js"></script> -->
+
+</body>
+</html>

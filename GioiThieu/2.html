@@ -5,39 +5,94 @@
   <title>
    Codeon Labs
   </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+    .custom-container {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 16px;
+      font-family: 'Roboto', sans-serif;
+    }
+    .custom-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .custom-subtitle {
+      text-align: center;
+      font-size: 1.125rem;
+      margin-top: 8px;
+    }
+    .custom-highlight {
+      text-align: center;
+      font-size: 1.75rem;
+      font-weight: bold;
+      color: #2563eb;
+      margin-top: 32px;
+    }
+    .custom-image-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-top: 32px;
+    }
+    .custom-image {
+      width: 100%;
+      height: auto;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+    .custom-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .custom-overlay-box {
+      width: 64px;
+      height: 64px;
+      border-radius: 8px;
+    }
+    .custom-blue {
+      background-color: #2563eb;
+    }
+    .custom-pink {
+      background-color: #f472b6;
+    }
+    .custom-green {
+      background-color: #10b981;
+    }
+  </style>
  </head>
- <body class="font-roboto bg-white">
-  <div class="container mx-auto p-4">
-   <div class="text-center">
-    <h1 class="text-4xl font-bold">
+ <body class="bg-white">
+  <div class="container custom-container">
+   <div>
+    <h1 class="custom-title">
      TẦM NHÌN
     </h1>
-    <p class="text-lg mt-2">
+    <p class="custom-subtitle">
      Chúng tôi khát khao trở thành công ty công nghệ đứng đầu Việt Nam, khẳng định vị thế trong nước cũng như thị trường quốc tế
     </p>
    </div>
-   <div class="text-center mt-8">
-    <h2 class="text-3xl font-bold text-blue-600">
+   <div>
+    <h2 class="custom-highlight">
      CODEON LABS
     </h2>
    </div>
-   <div class="mt-8 flex justify-center">
-    <div class="relative">
-     <img alt="A group of diverse people smiling and holding various tech devices" class="w-full h-auto" height="400" src="https://storage.googleapis.com/a1aa/image/LA6ME-B3wpxVVonLn1YgHO0uJIFFXaClhzlNLRBGXTQ.jpg" width="600"/>
-     <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+   <div class="custom-image-wrapper">
+    <img alt="A group of diverse people smiling and holding various tech devices" class="custom-image" height="400" src="https://storage.googleapis.com/a1aa/image/LA6ME-B3wpxVVonLn1YgHO0uJIFFXaClhzlNLRBGXTQ.jpg" width="600"/>
+    <div class="custom-overlay">
       <div class="flex space-x-4">
-       <div class="w-16 h-16 bg-blue-600">
-       </div>
-       <div class="w-16 h-16 bg-pink-300">
-       </div>
-       <div class="w-16 h-16 bg-green-500">
-       </div>
+       <div class="custom-overlay-box custom-blue"></div>
+       <div class="custom-overlay-box custom-pink"></div>
+       <div class="custom-overlay-box custom-green"></div>
       </div>
-     </div>
     </div>
    </div>
   </div>

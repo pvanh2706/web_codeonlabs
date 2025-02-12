@@ -1,37 +1,88 @@
 <html>
  <head>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
   <style>
-   body {
-            font-family: 'Roboto', sans-serif;
-        }
+    body {
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .custom-container {
+      background-color: #2563eb;
+      padding: 24px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 90%;
+      width: 600px;
+    }
+    .custom-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .custom-image-wrapper {
+      display: flex;
+      gap: 10px;
+    }
+    .custom-image {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .custom-text {
+      color: white;
+      text-align: center;
+      margin-top: 16px;
+    }
+    .custom-title {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .custom-description {
+      margin-top: 12px;
+      font-size: 16px;
+    }
+
+    @media (min-width: 768px) {
+      .custom-container {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 700px;
+      }
+      .custom-flex {
+        flex-direction: row;
+      }
+      .custom-text {
+        text-align: left;
+        margin-top: 0;
+        margin-left: 20px;
+      }
+    }
   </style>
  </head>
- <body class="bg-blue-600 flex items-center justify-center min-h-screen">
-  <div class="bg-blue-600 p-8 rounded-lg flex flex-col md:flex-row items-center md:items-start">
-   <div class="flex flex-col md:flex-row items-center md:items-start">
-    <div class="relative">
-     <img alt="A woman in a blue jacket looking to the side with a yellow background" class="w-48 h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/L29lJ-cJchbI99v89B9H996PD402kUD-M9Zzum-7wjs.jpg" width="200"/>
-     <div class="absolute top-0 left-0 w-24 h-24 bg-green-500">
-     </div>
-     <div class="absolute bottom-0 left-0 w-24 h-24 bg-white">
-     </div>
-     <div class="absolute bottom-0 right-0 w-24 h-24 bg-pink-500">
-     </div>
-    </div>
-    <div class="relative mt-4 md:mt-0 md:ml-4">
-     <img alt="A woman in a blue jacket holding a phone with a yellow background" class="w-48 h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/8ceOe_LN-8k1LuKzDGcbaB1vRQBbrNk9Z21K4E9RT_8.jpg" width="200"/>
+ <body>
+  <div class="custom-container">
+   <div class="custom-flex">
+    <div class="custom-image-wrapper">
+      <img alt="A woman in a blue jacket looking to the side" class="custom-image" src="https://storage.googleapis.com/a1aa/image/L29lJ-cJchbI99v89B9H996PD402kUD-M9Zzum-7wjs.jpg"/>
+      <img alt="A woman in a blue jacket holding a phone" class="custom-image" src="https://storage.googleapis.com/a1aa/image/8ceOe_LN-8k1LuKzDGcbaB1vRQBbrNk9Z21K4E9RT_8.jpg"/>
     </div>
    </div>
-   <div class="text-white mt-4 md:mt-0 md:ml-8">
-    <h1 class="text-4xl font-bold">
+   <div class="custom-text">
+    <h1 class="custom-title">
      SỨ MỆNH
     </h1>
-    <p class="mt-4 text-lg">
-     CodeOn Labs định hướng dẫn đầu các làn sóng công nghệ mới, nỗ lực phát triển sản phẩm, dịch vụ hữu ích đến người dùng; cung cấp giải pháp công nghệ như AI, Cloud và chuyển đổi số, tạo ra dịch vụ đạt chuẩn quốc tế, hiện diện trên toàn cầu.
+    <p class="custom-description">
+     CodeOn Labs tiên phong công nghệ mới, phát triển sản phẩm, dịch vụ hữu ích, cung cấp giải pháp AI, Cloud và chuyển đổi số, hướng đến tiêu chuẩn quốc tế.
     </p>
    </div>
   </div>
