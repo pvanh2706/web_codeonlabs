@@ -8,6 +8,11 @@ body {
 	color: #888;
 }
 
+.color-text-blue {
+	color: #175CD3;
+}
+
+
  /* Navbar chung */
  .navbar-custom {
 	background-color: white;
@@ -46,7 +51,8 @@ body {
 
 /* Nút gọi điện thoại */
 .btn-company-phone {
-	background-color: red;
+	background-color: #D1E9FF;
+	;
 	color: #000;
 	border-radius: 25px;
 	border: 1px solid #ccc;
@@ -557,62 +563,68 @@ img {
 
 /*============================= page service CSS ===============================*/
 
-.image-grid {
-	width: 150px;
-	height: 150px;
-	position: relative;
-	border-radius: 8px;
-	overflow: hidden;
+
+/*============================= ===============================*/
+
+.intro-service {
+    max-width: 100%;
+    height: auto;
 }
-.image-grid img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 0.3s ease-in-out;
+
+.icon-read-more {
+    width: 70px; /* Điều chỉnh kích thước phù hợp */
+    height: auto;
 }
-.image-grid .overlay {
-	position: absolute;
-	inset: 0;
-	background: rgba(255, 255, 255, 0.5);
-	transition: background 0.3s ease-in-out;
+
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
-.image-grid:hover img {
-	transform: scale(1.05);
+
+.btn-custom:hover {
+    background-color: #0056b3;
 }
-.image-grid:hover .overlay {
-	background: rgba(255, 255, 255, 0.3);
-}
+
 
 /*============================= ===============================*/
 .card-custom {
-	background: white;
-	padding: 30px;
-	margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
+
+.image-container {
+    flex: 1;
+    max-width: 50%;
+}
+
 .image-container img {
-	width: 350px;
-	height: 250px;
-	object-fit: cover;
-	border-radius: 10px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
-.btn-custom {
-	background-color: #0d6efd;
-	color: white;
-	font-weight: bold;
-	padding: 10px 20px;
-	border-radius: 25px;
-	display: flex;
-	align-items: center;
-	gap: 8px;
-	border: none;
-	transition: all 0.3s ease-in-out;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+
+.content-container {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
 }
-.btn-custom:hover {
-	background-color: #0b5ed7;
-	transform: translateY(-2px);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .image-container,
+    .content-container {
+        max-width: 100%;
+    }
 }
+
 .icon-chevron {
 	font-size: 1.2rem;
 }
@@ -674,3 +686,115 @@ img {
 }
 
 /*============================= End page service CSS ===============================*/
+
+/*============================= page contact CSS ===============================*/
+
+.shadow-lg {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho ảnh */
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column-reverse; /* Đưa nội dung lên trên khi màn hình nhỏ */
+        text-align: center;
+    }
+
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
+
+/*============================= ===============================*/
+
+.shadow-lg {
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho ảnh */
+}
+
+.fw-bold {
+	font-weight: bold;
+}
+
+.fs-5 {
+	font-size: 1.2rem;
+}
+
+.text-muted {
+	color: #666;
+}
+
+
+@media (max-width: 768px) {
+	.row {
+		text-align: center;
+	}
+
+	.company-name {
+		float: none;
+		text-align: center;
+	}
+}
+/*============================= ===============================*/
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 15px;
+	margin-top: 30px;
+}
+
+.grid-item {
+	border: 1px solid gray;
+	padding: 35px;
+	border-radius: 8px;
+	font-weight: bold;
+	background-color: #f8fafc;
+	text-align: center;
+}
+/*============================= ===============================*/
+.left-section {
+	background-color: #0d6efd;
+	color: white;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.right-section {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.contact-info i {
+	color: #0d6efd;
+	font-size: 1.2rem;
+	margin-right: 10px;
+}
+
+.contact-info a {
+	color: #0d6efd;
+	text-decoration: none;
+}
+
+.contact-info a:hover {
+	text-decoration: underline;
+}
+
+.form-control {
+	border-radius: 5px;
+}
+
+.btn-primary {
+	background-color: white;
+	color: #0d6efd;
+	font-weight: bold;
+	border: 2px solid #0d6efd;
+}
+
+.btn-primary:hover {
+	background-color: #f8f9fa;
+}
+/*============================= End page contact CSS ===============================*/

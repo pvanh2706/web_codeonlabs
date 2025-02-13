@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeOn Labs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .custom-banner {
+    display: flex;
+    align-items: center;
+    background-color: #1665d8; /* Màu xanh giống trong ảnh */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.content h3 {
+    font-weight: bold;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.image-container img {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 50%;
+    background-color: #dceeff; /* Màu nền tròn */
+    padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .custom-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 60%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="custom-banner">
+        <div class="content">
+            <h3>Hãy để <strong>CodeOn Labs</strong></h3>
+            <p>giúp bạn tạo ra Website giá rẻ, phù hợp và tăng doanh thu cho doanh nghiệp của bạn</p>
+        </div>
+        <div class="image-container">
+            <img src="img/banner-image.png" alt="Banner Image">
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
