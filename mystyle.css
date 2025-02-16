@@ -2,14 +2,19 @@
 	Global CSS 
 ===============================*/
 body {
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Inter', serif;
 	font-weight: 400;
 	font-size: 14px;
 	color: #888;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .color-text-blue {
-	color: #175CD3;
+	color: #175CD3 !important;
 }
 
 
@@ -17,7 +22,7 @@ body {
  .navbar-custom {
 	background-color: white;
 	transition: all 0.4s ease-in-out;
-	padding: 10px 0;
+	/* padding: 10px 0; */
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -29,7 +34,8 @@ body {
 
 /* Logo */
 .logo-company {
-	width: 100px;
+	width: 65px;
+	/* width: 100px; */
 	object-fit: cover;
 }
 
@@ -432,54 +438,95 @@ img {
 }
 
 
-.form-contact  {
-	position: relative;
+.form-contact {
+    position: relative;
+    padding: 40px 15px;
 }
 
 .contact-wrapper {
     position: absolute;
     top: 50%;
-    /* right: 5%; */
-    transform: translateY(-50%);
-    /* background: rgba(255, 255, 255, 0.9); */
-    padding: 20px;
-    /* border-radius: 10px; */
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
-    /* max-width: 350px; */
     left: 5%;
+    transform: translateY(-50%);
+    text-align: left;
+    width: 40%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.1); /* Nền mờ để phù hợp với ảnh */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px); /* Hiệu ứng làm mờ nền */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Viền nhẹ */
+}
+
+.contact-wrapper h2 {
+    color: white;
+}
+
+.underline-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.underline-1 {
+    width: 80px;
+    height: 4px;
+    background-color: white;
+}
+
+.underline-2 {
+    width: 50px;
+    height: 4px;
+    background-color: white;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #0056b3;
+    font-weight: bold;
+    border: none;
+}
+
+@media (max-width: 992px) {
+    .contact-wrapper {
+        width: 60%;
+        left: 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    
+    .underline-wrapper {
+        justify-content: center;
+    }
 }
 
 
-/* .contact-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: sans-serif;
-} */
+
 
 .page-contact-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	font-family: sans-serif;
-}
-
-.underline-wrapper {
-    display: flex;
-	margin-left: 30%;
-    gap: 15px;
-}
-
-.underline-1 {
-    width: 90px;
-    height: 5px;
-    background-color: #000;
-}
-
-.underline-2 {
-    width: 50px;
-    height: 5px;
-    background-color: #000;
 }
 
 .footer-list li {
@@ -720,10 +767,10 @@ img {
 }
 
 @media (max-width: 768px) {
-    .row {
-        flex-direction: column-reverse; /* Đưa nội dung lên trên khi màn hình nhỏ */
+    /* .row {
+        flex-direction: column-reverse;  Đưa nội dung lên trên khi màn hình nhỏ 
         text-align: center;
-    }
+    } */
 
     .col-md-6 {
         margin-bottom: 20px;
@@ -824,3 +871,16 @@ img {
 	background-color: #f8f9fa;
 }
 /*============================= End page contact CSS ===============================*/
+
+
+.text-overlay11 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background: rgba(0, 0, 0, 0.5); /* Nền mờ để dễ đọc */
+    color: white; /* Màu chữ trắng */
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slicknav -->
+	<!-- <link rel="stylesheet" href="css/slicknav.min.css"> -->
+
+    <!-- Medipro CSS -->
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="css/DetailWeCan/detail-we-can-dichvuseo.css">
+    
+
+    <!-- Import Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- menu.html -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-company.png" alt="Logo" class="logo-company">
+            </a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main menu -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page-service.html">Dịch vụ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page-why-choose-us.html">Tại sao chọn CodeOn Labs?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page-blog.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page-contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <!-- Nút gọi điện -->
+            <div class="d-none d-lg-block">
+                <a href="tel:0979160564" class="btn btn-company-phone px-4 py-2">0979 160 564</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const menuItems = document.querySelectorAll(".nav-link");
+
+    // Lấy pathname của URL hiện tại (chỉ lấy phần đường dẫn, không có domain)
+    const currentPath = window.location.pathname.split("/").pop(); 
+
+    menuItems.forEach(link => {
+        const linkPath = link.getAttribute("href").split("/").pop(); 
+
+        // Nếu đường dẫn trùng khớp thì thêm class active
+        if (linkPath === currentPath) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+});
+
+    </script>
+
+   <div class="container detail-we-can-dichvuseo" style="margin-top: 100px;">
+        <div class="row">
+            <h1 class="text-center fw-bold color-text-blue">TỐI ƯU CHI PHÍ QUẢNG CÁO</h1>
+            <h1 class="text-center fw-bold color-text-blue">CHIẾN LƯỢC HIỆU QUẢ GIÚP DOANH NGHIỆP TĂNG TRƯỞNG</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 px-4 d-flex flex-column align-items-center">
+                <img src="img/toiuuqc-bongdenvang.png" alt="">
+                <h5 class="mt-3">Tiết kiệm ngân sách</h5>
+                <p class="text-justify">Tối ưu chi phí quảng cáo giúp doanh nghiệp tiết kiệm được ngân sách bằng cách tập trung vào những chiến dịch hiệu quả nhất. Doanh nghiệp sẽ tránh được tình trạng chi tiêu lãng phí và có thể dùng ngân sách đó cho các hoạt động khác như phát triển sản phẩm, dịch vụ.</p>
+            </div>
+            <div class="col-lg-4 px-4 d-flex flex-column align-items-center">
+                <img src="img/toiuuqc-like.png" alt="">
+                <h5 class="mt-3">Tiết kiệm ngân sách</h5>
+                <p class="text-justify">Tối ưu chi phí quảng cáo giúp doanh nghiệp tiết kiệm được ngân sách bằng cách tập trung vào những chiến dịch hiệu quả nhất. Doanh nghiệp sẽ tránh được tình trạng chi tiêu lãng phí và có thể dùng ngân sách đó cho các hoạt động khác như phát triển sản phẩm, dịch vụ.</p>
+            </div>
+            <div class="col-lg-4 px-4 d-flex flex-column align-items-center">
+                <img src="img/toiuuqc-loa.png" alt="">
+                <h5 class="mt-3">Tiết kiệm ngân sách</h5>
+                <p class="text-justify">Tối ưu chi phí quảng cáo giúp doanh nghiệp tiết kiệm được ngân sách bằng cách tập trung vào những chiến dịch hiệu quả nhất. Doanh nghiệp sẽ tránh được tình trạng chi tiêu lãng phí và có thể dùng ngân sách đó cho các hoạt động khác như phát triển sản phẩm, dịch vụ.</p>
+            </div>
+        </div>
+        
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 px-4 d-flex flex-column align-items-center">
+                <img src="img/toiuuqc-loa.png" alt="">
+                <h5 class="mt-3">Tiết kiệm ngân sách</h5>
+                <p class="text-justify">Tối ưu chi phí quảng cáo giúp doanh nghiệp tiết kiệm được ngân sách bằng cách tập trung vào những chiến dịch hiệu quả nhất. Doanh nghiệp sẽ tránh được tình trạng chi tiêu lãng phí và có thể dùng ngân sách đó cho các hoạt động khác như phát triển sản phẩm, dịch vụ.</p>
+            </div>
+            <div class="col-lg-4 px-4 d-flex flex-column align-items-center">
+                <img src="img/toiuuqc-loa.png" alt="">
+                <h5 class="mt-3">Tiết kiệm ngân sách</h5>
+                <p class="text-justify">Tối ưu chi phí quảng cáo giúp doanh nghiệp tiết kiệm được ngân sách bằng cách tập trung vào những chiến dịch hiệu quả nhất. Doanh nghiệp sẽ tránh được tình trạng chi tiêu lãng phí và có thể dùng ngân sách đó cho các hoạt động khác như phát triển sản phẩm, dịch vụ.</p>
+            </div>
+        </div>
+   </div>
+    
+
+ 
+    <footer class="bg-light py-4">
+        <div class="container text-center mb-3">
+            <!-- <img src="img/footer.png" class="img-fluid mx-auto d-block" alt="Ảnh căn giữa" style="max-width: 500px;"> -->
+        </div>
+
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Cột 1: Logo và giới thiệu -->
+                <div class="col-md-3 mb-4">
+                    <div class="d-flex align-items-center">
+                        <img src="img/logo-company.png" class="img-fluid me-3" alt="Logo" style="width: 100px;">
+                        <div>
+                            <h6 class="mb-0">CODE ON LABS</h6>
+                            <small>Coding of the future</small>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-muted">
+                        CodeOn Labs đồng hành cùng doanh nghiệp trong việc tạo ra những website giá trị, giúp khách hàng tăng trưởng doanh thu và tiếp cận với nhiều khách hàng hơn.
+                    </p>
+                </div>
+
+                <!-- Cột 2: Dịch vụ -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">DỊCH VỤ CỦA CHÚNG TÔI</h6>
+                    <ul class="list-unstyled footer-list">
+                        <li><span>&gt;&gt;</span> Thiết kế website</li>
+                        <li><span>&gt;&gt;</span> Chỉnh sửa website</li>
+                        <li><span>&gt;&gt;</span> Dịch vụ hosting</li>
+                        <li><span>&gt;&gt;</span> Dịch vụ SEO website</li>
+                        <li><span>&gt;&gt;</span> Đăng ký tên miền</li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Thiết kế website -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">THIẾT KẾ WEBSITE CHUYÊN NGHIỆP</h6>
+                    <ul class="list-unstyled footer-list">
+                        <li><span>&gt;&gt;</span> Thiết kế website theo yêu cầu</li>
+                        <li><span>&gt;&gt;</span> Thiết kế website bán hàng</li>
+                        <li><span>&gt;&gt;</span> Thiết kế web nhà thuốc</li>
+                        <li><span>&gt;&gt;</span> Thiết kế web doanh nghiệp</li>
+                    </ul>
+                </div>
+
+                <!-- Cột 4: Mạng xã hội và liên hệ -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">VỀ CHÚNG TÔI</h6>
+                    <div class="d-flex social-icons gap-3 justify-content-md-start">
+                        <a href="https://www.facebook.com" target="_blank" class="text-primary">
+                            <i class="bi bi-facebook fs-3"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="text-primary">
+                            <i class="bi bi-linkedin fs-3"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank" class="text-danger">
+                            <i class="bi bi-youtube fs-3"></i>
+                        </a>
+                    </div>
+                    <p class="mt-3"><i class="bi bi-telephone-fill text-primary"></i> 0906258096</p>
+                    <p><i class="bi bi-envelope-fill text-danger"></i> info@codeonlabs.vn</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jquery Min JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Slicknav JS -->
+	<!-- <script src="js/slicknav.min.js"></script> -->
+
+</body>
+</html>
+<!-- 
+Nếu chỉ muốn căn giữa dọc, dùng d-flex align-items-center.
+Nếu muốn căn giữa cả hai chiều, dùng d-flex align-items-center justify-content-center. -->

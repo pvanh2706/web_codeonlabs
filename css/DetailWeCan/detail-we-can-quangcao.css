@@ -1,0 +1,27 @@
+.detail-we-can-quangcao {
+    font-family: 'Inter', serif;
+    p, h1, h2, h3, h4, h5, h6 {
+        color: black;
+        margin-top: 10px;
+    }
+    .circle-number {
+        width: 32px;
+        height: 32px;
+        aspect-ratio: 1 / 1;
+        border: 2px solid #007bff; /* Viền màu xanh */
+        border-radius: 50%; /* Hình tròn */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #007bff;
+        position: relative;
+        background-color: #EFF8FF;
+    }
+
+    .icon-star {
+        margin-top: 10px;
+        width: 24px;
+        height: auto;
+    }
+}
